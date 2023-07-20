@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './studentCard.css'
+
 
 
 export default function StudentCard({ student }) {
@@ -17,15 +19,18 @@ export default function StudentCard({ student }) {
     console.log(`<StudentCard /> rendered name = ${firstName}`)
     return (
         <div className='studentCard'>
-    
-            <img src={pic} alt={`${firstName} ${lastName}`} />
-            <h1>{firstName} {lastName}</h1>
-            <ul>
-                <li>Email: {email}</li>
-                <li>Company: {company}</li>
-                <li>Skill: {skill}</li>
-                <li>Average: {average}</li>
-            </ul>
+            <div className='studentCard__avatar'>
+                <img src={pic} alt={`${firstName} ${lastName}`} />
+            </div>
+            <div className='studentCard__info'>
+                <h1>{firstName} {lastName}</h1>
+                <ul> 
+                    <li>Email: {email}</li>
+                    <li>Company: {company}</li>
+                    <li>Skill: {skill}</li>
+                    <li>Average: {average}</li>
+                </ul>
+            </div>
         </div>
     );
 };

@@ -5,7 +5,7 @@ import './App.css';
 
 const API_URL = 'http://localhost:7777';
 
-// LEFT OFF VIDEO AT 1:14
+// LEFT OFF VIDEO AT 1:05
 function App() {
 
   const [studentData, setStudentData] = useState([]);
@@ -29,7 +29,6 @@ function App() {
   console.log(`<App /> rendered)! num of students: ${studentData.length}`);
   return (
     <div className="App">
-      <h1>Hello, World!</h1>
       <StudentList studentData={studentData} />
     </div>
   );

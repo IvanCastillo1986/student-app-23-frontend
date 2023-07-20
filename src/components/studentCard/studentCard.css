@@ -1,0 +1,30 @@
+.studentCard {
+    /* border: 3px dashed red; */
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.studentCard div {
+    /* border: 3px dotted brown; */
+}
+
+.studentCard__avatar {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.studentCard__avatar img {
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+}
+.studentCard__info h1 {
+    margin: 0;
+    text-transform: uppercase;
+}
+.studentCard__info li {
+    list-style-type: none;
+}

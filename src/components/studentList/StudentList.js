@@ -1,6 +1,7 @@
 import React from 'react';
 
 import StudentCard from '../studentCard/StudentCard';
+import './studentList.css'
 
 
 export default function StudentList({ studentData }) {
@@ -9,7 +10,9 @@ export default function StudentList({ studentData }) {
         
     return (
         <div className='studentList'>
-            {studentData.map((student) => <StudentCard key={student.id} student={student} />)}
+            {studentData.map((student) => 
+                <StudentCard key={student.id} student={student} />
+            )}
         </div>
     );
 };
