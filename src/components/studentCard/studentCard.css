@@ -25,6 +25,10 @@
     margin: 0;
     text-transform: uppercase;
 }
+.studentCard__info ul {
+    padding-inline-start: 16px;
+    color: #777;
+}
 .studentCard__info li {
     list-style-type: none;
 }

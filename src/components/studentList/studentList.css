@@ -1,7 +1,8 @@
 .studentList {
-    background-color: #fff;
     /* border: 3px dotted blue; */
     /* box-sizing: border-box; */
+    background-color: #fff;
+    border-radius: 5px;
     width: 60vw;
     height: 80vh;
     overflow-y: scroll;

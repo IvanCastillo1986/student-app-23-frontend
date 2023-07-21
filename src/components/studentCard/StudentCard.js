@@ -16,7 +16,7 @@ export default function StudentCard({ student }) {
 
     const average = total / numericGrades.length;
 
-    console.log(`<StudentCard /> rendered name = ${firstName}`)
+    // console.log(`<StudentCard /> rendered name = ${firstName}`)
     return (
         <div className='studentCard'>
             <div className='studentCard__avatar'>
