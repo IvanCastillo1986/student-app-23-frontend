@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import StudentList from './components/studentList/StudentList';
 import Loading from './components/loading/Loading';
 import Error from './components/error/Error';
+import Container from './layout/container/Container';
 import './App.css';
 
 const API_URL = 'http://localhost:7777';
@@ -12,7 +13,7 @@ function App() {
 
   const [studentData, setStudentData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     console.log('<App /> useEffect fired');
@@ -62,7 +63,9 @@ function App() {
   return (
     <div className="App">
       
-      {renderContent()}
+      <Container center={Boolean(error || loading)}>
+        {renderContent()}
+      </Container>
 
       {/* {loading ? <Loading /> : <StudentList studentData={studentData} />} */}
     </div>

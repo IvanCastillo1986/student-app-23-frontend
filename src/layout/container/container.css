@@ -1,0 +1,13 @@
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 60vw;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.container--center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
